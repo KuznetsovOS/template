@@ -13,7 +13,7 @@
     <header class="header">
         <div class="container">
               <div class="logo">
-                  <a href="#">
+                  <a href="index.html">
                       <img src="ico.png" alt="Last.fm Logo">
                   </a>
               </div>
@@ -32,90 +32,23 @@
                       <li><a href="#">Events</a></li>
                   </ul>
               </nav>
-            
         </div>
     </header>
-  
 
-    <div class="search-results">
-        <div class="search-header">
-            <h1 class="search-query">Results for ""</h1>
-            <div class="results-count">"" results found</div>
-        </div>
-        
-        <div class="results-tabs">
-            <div class="tab active">Top</div>
-            <div class="tab">Artists</div>
-            <div class="tab">Tracks</div>
-            <div class="tab">Albums</div>
-        </div>
-        
-        <div class="results-section">
-            <h2 class="section-title">Artists</h2>
-            
-            <div class="result-item">
-                <div class="result-type">Artist 1</div>
-                <img src="#" alt="Artist" class="result-image">
-                <div class="result-info">
-                    <div class="result-title">""</div>
-                    <div class="result-artist">"" listeners</div>
-                </div>
+    <main class="main-content">
+        <div class="search-results">
+            <div class="search-header">
+                <h1 class="search-query">Results for ""</h1>
             </div>
             
-            <div class="result-item">
-                <div class="result-type">Artist 2</div>
-                <img src="#" alt="Artist" class="result-image">
-                <div class="result-info">
-                    <div class="result-title">""</div>
-                    <div class="result-artist">"" listeners</div>
-                </div>
+            <div class="results-tabs">
+                <div class="tab active" data-tab="top-tab">Top</div>
+                <div class="tab" data-tab="artists-tab">Artists</div>
+                <div class="tab" data-tab="tracks-tab">Tracks</div>
+                <div class="tab" data-tab="albums-tab">Albums</div>
             </div>
         </div>
-        
-        <div class="results-section">
-            <h2 class="section-title">Albums</h2>
-            
-            <div class="result-item">
-                <div class="result-type">Album 1</div>
-                <img src="#" alt="Artist" class="result-image">
-                <div class="result-info">
-                    <div class="result-title">""</div>
-                    <div class="result-artist">"" - "" plays</div>
-                </div>
-            </div>
-            
-            <div class="result-item">
-                <div class="result-type">Album 2</div>
-                <img src="#" alt="Artist" class="result-image">
-                <div class="result-info">
-                    <div class="result-title">""</div>
-                    <div class="result-artist">"" - "" plays</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="results-section">
-            <h2 class="section-title">Tracks</h2>
-            
-            <div class="result-item">
-                <div class="result-type">Track 1</div>
-                <img src="#" alt="Artist" class="result-image">
-                <div class="result-info">
-                    <div class="result-title">""</div>
-                    <div class="result-artist">"" - "" plays</div>
-                </div>
-            </div>
-            
-            <div class="result-item">
-                <div class="result-type">Track 2</div>
-                <img src="#" alt="Artist" class="result-image">
-                <div class="result-info">
-                    <div class="result-title">""</div>
-                    <div class="result-artist">"" - "" plays</div>
-                </div>
-            </div>
-        </div>
-    </div>
+    </main>
 
     <footer class="footer">
         <div class="container">
@@ -141,6 +74,7 @@
                 <p>Last.fm</p>
             </div>
         </div>
-      </footer>
-</body>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
