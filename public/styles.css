@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: #d51007;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #b30c05;
+}
+
+.btn-register:hover {
+    background-color: #f0f0f0;
+}
+
+/* Шапка */
+.header {
+    background-color: #000;
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 30px;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.main-nav ul li {
+    margin-right: 20px;
+}
+
+.main-nav ul li a {
+    font-weight: 500;
+}
+
+.main-nav ul li a:hover {
+    color: #d51007;
+}
+
+/* Поиск */
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0;
+    order: 2;
+    height: 48px;
+    position: relative;
+}
+
+.search-input {
+    width: 100%;
+    height: 100%;
+    padding: 0 1.5rem;
+    border: 2px solid transparent;
+    border-radius: 24px;
+    font-size: 1rem;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search-input:focus {
+    background: #fff;
+    color: #333;
+    border-color: #d51007;
+    box-shadow: 0 0 0 4px rgba(213, 16, 7, 0.1);
+}
+
+.search-input:focus::placeholder {
+    color: #999;
+}
+
+.search-button {
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #d51007;
+    border: none;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.search-button:hover {
+    background: #b30c05;
+    transform: translateY(-50%) scale(1.05);
+}
+
+.search-button:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+/* Сетки элементов (тренды и популярное) */
+.trending, .popular {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.trending h2, .popular h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.trending-grid, .popular-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.trending-item, .popular-item {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.trending-item:hover, .popular-item:hover {
+    transform: translateY(-5px);
+}
+
+.trending-item img, .popular-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.trending-item h3, .popular-item h3 {
+    padding: 15px 10px 5px;
+    font-size: 1.2rem;
+}
+
+.trending-item p, .popular-item p {
+    padding: 0 10px 15px;
+    color: #777;
+}
+
+/* Подвал */
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 50px 0 20px;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-column h4 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a:hover {
+    color: #d51007;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+/* Результаты поиска */
+.search-results {
+    padding: 30px 50px;
+}
+
+.search-header {
+    margin-bottom: 30px;
+}
+
+.search-query {
+    font-size: 24px;
+    color: #b90000;
+    font-weight: bold;
+}
+
+.results-count {
+    color: #333;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.results-tabs {
+    display: flex;
+    border-bottom: 1px solid #333;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #888;
+}
+
+.tab.active {
+    border-bottom: 2px solid #b90000;
+}
+
+.result-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.result-image {
+    width: 60px;
+    height: auto;
+    display: block;
+    background-color: #f0f0f0;
+}
+
+.result-info {
+    flex-grow: 1;
+}
+
+.result-title {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.result-artist {
+    font-size: 14px;
+    color: #333;
+}
+
+.result-type {
+    color: #333;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    width: 80px;
+    flex-shrink: 0;
+}
+
+.results-section {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}
