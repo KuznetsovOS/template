@@ -2,36 +2,173 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <meta name="description" content="Web site created using create-react-app" />
+    <title>Last.fm</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <header class="header">
+      <div class="container">
+            <div class="logo">
+                <a href="#">
+                    <img src="ico.png" alt="Last.fm Logo">
+                </a>
+            </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search songs, artists...">
+                <button class="search-button">
+                </button>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Live</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Charts</a></li>
+                    <li><a href="#">Events</a></li>
+                </ul>
+            </nav>
+          
+      </div>
+  </header>
+
+
+  <main class="main-content">
+    <section class="hero">
+        <div class="container">
+            <h1>Music</h1>
+        </div>
+    </section>
+
+    <section class="trending">
+        <div class="container">
+            <h2>Trending now</h2>
+            <div class="trending-grid">
+                <div class="trending-item">
+                    <img src="#" alt="Artist">
+                    <h3>Taylor Swift</h3>
+                    <p>Pop</p>
+                </div>
+                <div class="trending-item">
+                    <img src="#" alt="Artist">
+                    <h3>Kendrick Lamar</h3>
+                    <p>Hip-Hop</p>
+                </div>
+                <div class="trending-item">
+                    <img src="#" alt="Artist">
+                    <h3>Radiohead</h3>
+                    <p>Alternative</p>
+                </div>
+                <div class="trending-item">
+                    <img src="#" alt="Artist">
+                    <h3>Dua Lipa</h3>
+                    <p>Pop</p>
+                </div>
+                <div class="trending-item">
+                    <img src="#" alt="Artist">
+                    <h3>Lana Del Rey</h3>
+                    <p>Pop</p>
+                </div>
+                <div class="trending-item">
+                    <img src="#" alt="Artist">
+                    <h3>Drake</h3>
+                    <p>Pop</p>
+                </div>
+                <div class="trending-item">
+                    <img src="#" alt="Artist">
+                    <h3>The Weeknd</h3>
+                    <p>Pop</p>
+                </div>
+                <div class="trending-item">
+                    <img src="#" alt="Artist">
+                    <h3>Philip Kirkorov</h3>
+                    <p>Pop</p>
+                </div>
+                <div class="trending-item">
+                    <img src="#" alt="Artist">
+                    <h3>Tyler, the Creator</h3>
+                    <p>Hip-Hop</p>
+                </div>
+                <div class="trending-item">
+                    <img src="#" alt="Artist">
+                    <h3>Frank Ocean</h3>
+                    <p>Hip-Hop</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="popular">
+        <div class="container">
+            <h2>Popular tracks</h2>
+            <div class="popular-grid">
+                <div class="popular-item">
+                    <img src="#" alt="Track">
+                    <h3>After LIKE</h3>
+                    <p>IVE</p>
+                    <p>k-pop</p>
+                </div>
+                <div class="popular-item">
+                    <img src="#" alt="Track">
+                    <h3>After LIKE</h3>
+                    <p>IVE</p>
+                    <p>k-pop</p>
+                </div>
+                <div class="popular-item">
+                    <img src="#" alt="Track">
+                    <h3>After LIKE</h3>
+                    <p>IVE</p>
+                    <p>k-pop</p>
+                </div>
+                <div class="popular-item">
+                    <img src="#" alt="Track">
+                    <h3>After LIKE</h3>
+                    <p>IVE</p>
+                    <p>k-pop</p>
+                </div>
+                <div class="popular-item">
+                    <img src="#" alt="Track">
+                    <h3>After LIKE</h3>
+                    <p>IVE</p>
+                    <p>k-pop</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+  <footer class="footer">
+    <div class="container">
+        <div class="footer-links">
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Last.fm</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Jobs</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="#">Track my music</a></li>
+                    <li><a href="#">Community support</a></li>
+                    <li><a href="#">Community guidelines</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Last.fm</p>
+        </div>
+    </div>
+  </footer>
+
   </body>
 </html>
